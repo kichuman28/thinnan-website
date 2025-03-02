@@ -1,3 +1,6 @@
+import idliImage from '../assets/screenshots/Idli.png';
+import berryPorridgeImage from '../assets/screenshots/berry_porridge.png';
+
 const FeaturesSection = () => {
   return (
     <section id="features" className="py-16 md:py-24 relative overflow-hidden">
@@ -49,10 +52,14 @@ const FeaturesSection = () => {
                 <div className="bg-gradient-to-br from-gray-50 to-gray-100 w-full h-[180px] rounded-xl flex items-center justify-center p-4">
                   <div className="w-full max-w-[220px] bg-white rounded-lg shadow-md p-3 transform group-hover:scale-105 transition-transform duration-300">
                     <div className="flex items-center space-x-2 mb-2">
-                      <div className="w-6 h-6 bg-accent/20 rounded-full"></div>
-                      <div className="text-sm font-medium">Kerala Christmas Brunch</div>
+                      <div className="text-sm font-medium">Podi Idli & Mint Chutney</div>
                     </div>
-                    <div className="h-[100px] bg-gray-200 rounded-md mb-2 relative overflow-hidden">
+                    <div className="h-[100px] rounded-md mb-2 relative overflow-hidden">
+                      <img 
+                        src={idliImage} 
+                        alt="Podi Idli & Mint Chutney" 
+                        className="w-full h-full object-cover"
+                      />
                       <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
                     <div className="flex justify-between items-center">
@@ -89,7 +96,12 @@ const FeaturesSection = () => {
                     <div className="flex justify-between items-center mb-2">
                       <div className="text-sm font-medium">Berry porridge</div>
                     </div>
-                    <div className="h-[100px] bg-gray-200 rounded-md mb-2 relative overflow-hidden">
+                    <div className="h-[100px] rounded-md mb-2 relative overflow-hidden">
+                      <img 
+                        src={berryPorridgeImage} 
+                        alt="Berry porridge" 
+                        className="w-full h-full object-cover"
+                      />
                       <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
                     <div className="flex justify-between items-center">
