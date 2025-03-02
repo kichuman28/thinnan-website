@@ -65,7 +65,7 @@ const FoundersSection = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            The team behind Thinnan bringing the joy of shared meals to your community.
+            The team behind thinnan bringing the joy of shared meals to your community.
           </p>
         </div>
 

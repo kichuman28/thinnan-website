@@ -1,10 +1,10 @@
-# Thinnan Website
+# thinnan Website
 
-A beautiful, modern website for Thinnan, a social food network application that connects food enthusiasts, allows them to discover cooking events, host cookouts, and build community through shared culinary experiences.
+A beautiful, modern website for thinnan, a social food network application that connects food enthusiasts, allows them to discover cooking events, host cookouts, and build community through shared culinary experiences.
 
-## 📱 About Thinnan App
+## 📱 About thinnan App
 
-Thinnan is a social food network platform with the tagline "bringing people together plate by plate!" The app allows users to:
+thinnan is a social food network platform with the tagline "bringing people together plate by plate!" The app allows users to:
 
 - Discover cooking events in their area
 - Host their own cookouts
@@ -15,11 +15,11 @@ Thinnan is a social food network platform with the tagline "bringing people toge
 
 ## 🚀 Features of this Website
 
-This website showcases the Thinnan app with the following sections:
+This website showcases the thinnan app with the following sections:
 
-- **Hero Section**: Introducing Thinnan and its core purpose
+- **Hero Section**: Introducing thinnan and its core purpose
 - **Features Section**: Highlighting key functionalities of the app
-- **How It Works**: Step-by-step guide to using the Thinnan app
+- **How It Works**: Step-by-step guide to using the thinnan app
 - **Community**: Showcasing user testimonials and community stats
 - **Download Section**: Links to download the app on different platforms
 
@@ -60,7 +60,7 @@ This website is built using:
 
 ## 🔗 Links
 
-- [Thinnan App Website](https://thinnan.com)
+- [thinnan App Website](https://thinnan.com)
 - [App Store](https://example.com)
 - [Google Play](https://example.com)
 

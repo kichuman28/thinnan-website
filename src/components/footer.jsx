@@ -142,7 +142,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
             <p className="text-gray-400 text-sm mb-4 md:mb-0 relative group">
               <span className="absolute -left-2 top-1/2 -translate-y-1/2 w-1 h-1 bg-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
-              &copy; {currentYear} Thinnan. All rights reserved.
+              &copy; {currentYear} thinnan. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-400">
               <a href="#" className="hover:text-accent transition-all duration-300 relative group">

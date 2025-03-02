@@ -7,13 +7,13 @@ const CommunitySection = () => {
     {
       name: "Kalyani Anjana",
       role: "Pastry Chef",
-      quote: "I moved to Helsinki from Paris and wanted to connect with locals through food. Thinnan helped me share my pastry skills and make friends who appreciate French cuisine.",
+      quote: "I moved to Helsinki from Paris and wanted to connect with locals through food. thinnan helped me share my pastry skills and make friends who appreciate French cuisine.",
       image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     },
     {
       name: "Vishnu George",
       role: "Home Cook",
-      quote: "I host weekly Kerala cookouts through Thinnan. It's amazing to share my culture's food with people who are curious and excited to learn about new flavors.",
+      quote: "I host weekly Kerala cookouts through thinnan. It's amazing to share my culture's food with people who are curious and excited to learn about new flavors.",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
     },
     {

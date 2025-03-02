@@ -105,7 +105,7 @@ const DownloadSection = () => {
                   {/* App screenshot image */}
                   <img 
                     src={downloadScreenshot} 
-                    alt="Thinnan app screenshot" 
+                    alt="thinnan app screenshot" 
                     className="h-full w-full object-cover"
                   />
                   

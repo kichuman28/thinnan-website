@@ -50,7 +50,7 @@ const HeroSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-tr from-black/5 to-black/0 rounded-3xl pointer-events-none"></div>
                 <img 
                   src={heroImage} 
-                  alt="Thinnan app screenshot" 
+                  alt="thinnan app screenshot" 
                   className="max-w-full h-auto shadow-lg rounded-3xl relative z-10"
                   style={{ maxHeight: '600px' }} 
                 />

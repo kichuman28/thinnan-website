@@ -22,7 +22,7 @@ const FeaturesSection = () => {
             <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent to-transparent opacity-40"></div>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mt-4">
-            Thinnan helps you discover, connect, and share memorable meals with friends and food enthusiasts.
+            thinnan helps you discover, connect, and share memorable meals with friends and food enthusiasts.
           </p>
         </div>
 
