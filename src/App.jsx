@@ -3,6 +3,7 @@ import HeroSection from './components/hero_section';
 import FeaturesSection from './components/features_section';
 import HowItWorksSection from './components/how_it_works_section';
 import CommunitySection from './components/community_section';
+import FoundersSection from './components/founders_section';
 import DownloadSection from './components/download_section';
 import Footer from './components/footer';
 
@@ -15,6 +16,7 @@ function App() {
         <FeaturesSection />
         <HowItWorksSection />
         <CommunitySection />
+        <FoundersSection />
         <DownloadSection />
       </main>
       <Footer />
