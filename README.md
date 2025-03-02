@@ -1,12 +1,69 @@
-# React + Vite
+# Thinnan Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A beautiful, modern website for Thinnan, a social food network application that connects food enthusiasts, allows them to discover cooking events, host cookouts, and build community through shared culinary experiences.
 
-Currently, two official plugins are available:
+## 📱 About Thinnan App
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Thinnan is a social food network platform with the tagline "bringing people together plate by plate!" The app allows users to:
 
-## Expanding the ESLint configuration
+- Discover cooking events in their area
+- Host their own cookouts
+- Connect with other food enthusiasts
+- Share culinary experiences
+- Filter events by location
+- View past and upcoming events
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features of this Website
+
+This website showcases the Thinnan app with the following sections:
+
+- **Hero Section**: Introducing Thinnan and its core purpose
+- **Features Section**: Highlighting key functionalities of the app
+- **How It Works**: Step-by-step guide to using the Thinnan app
+- **Community**: Showcasing user testimonials and community stats
+- **Download Section**: Links to download the app on different platforms
+
+## 🔧 Tech Stack
+
+This website is built using:
+
+- React
+- Tailwind CSS
+- Vite
+
+## 🛠️ Setup & Installation
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/yourusername/thinnan-website.git
+   cd thinnan-website
+   ```
+
+2. Install dependencies
+   ```bash
+   npm install
+   ```
+
+3. Start the development server
+   ```bash
+   npm run dev
+   ```
+
+4. Build for production
+   ```bash
+   npm run build
+   ```
+
+## 📄 License
+
+[MIT](LICENSE)
+
+## 🔗 Links
+
+- [Thinnan App Website](https://thinnan.com)
+- [App Store](https://example.com)
+- [Google Play](https://example.com)
+
+## 👨‍💻 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
