@@ -20,7 +20,7 @@ const HowItWorksSection = () => {
         <div className="text-center mb-16 relative">
           <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-32 h-32 bg-accent/5 rounded-full blur-xl"></div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 relative inline-block">
-            How Thinnan Works
+            How thinnan Works
             <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent to-transparent opacity-40"></div>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mt-4">

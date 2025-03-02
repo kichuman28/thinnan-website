@@ -23,7 +23,7 @@ const Footer = () => {
       
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-12 md:py-16 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="md:col-span-1">
+          <div className="md:col-span-1 text-center md:text-left">
             <div className="mb-5 relative">
               <div className="absolute -top-6 -left-6 w-12 h-12 bg-accent opacity-10 rounded-full blur-lg"></div>
               <h2 className="text-2xl font-bold mb-1">
@@ -32,10 +32,10 @@ const Footer = () => {
               </h2>
               <p className="text-gray-300 text-sm">Your social food network</p>
             </div>
-            <p className="text-gray-300 text-sm mb-6 backdrop-blur-sm">
+            <p className="text-gray-300 text-sm mb-6 backdrop-blur-sm mx-auto md:mx-0 max-w-md">
               Bringing people together, one meal at a time. Connect with food enthusiasts and share culinary experiences.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 justify-center md:justify-start">
               <a 
                 href="#" 
                 className="text-gray-300 hover:text-accent transition-all duration-300 transform hover:scale-110" 
@@ -76,14 +76,14 @@ const Footer = () => {
           </div>
           
           <div className="md:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="relative">
+            <div className="relative text-center md:text-left">
               {/* Subtle accent for section */}
               <div className="absolute -top-2 -left-2 w-10 h-10 bg-accent/5 rounded-full blur-md"></div>
               
               <h3 className="text-white font-semibold mb-4">
                 <span className="relative inline-block">
                   Pages
-                  <span className="absolute -bottom-1 left-0 w-8 h-0.5 bg-accent/30 rounded-full"></span>
+                  <span className="absolute -bottom-1 left-0 right-0 md:right-auto md:left-0 md:w-8 w-12 h-0.5 bg-accent/30 rounded-full mx-auto md:mx-0"></span>
                 </span>
               </h3>
               <ul className="space-y-3">
@@ -95,14 +95,14 @@ const Footer = () => {
               </ul>
             </div>
             
-            <div className="relative">
+            <div className="relative text-center md:text-left">
               {/* Subtle accent for section */}
               <div className="absolute -top-2 -left-2 w-10 h-10 bg-accent/5 rounded-full blur-md"></div>
               
               <h3 className="text-white font-semibold mb-4">
                 <span className="relative inline-block">
                   Download
-                  <span className="absolute -bottom-1 left-0 w-8 h-0.5 bg-accent/30 rounded-full"></span>
+                  <span className="absolute -bottom-1 left-0 right-0 md:right-auto md:left-0 md:w-8 w-12 h-0.5 bg-accent/30 rounded-full mx-auto md:mx-0"></span>
                 </span>
               </h3>
               <ul className="space-y-3">
@@ -112,14 +112,14 @@ const Footer = () => {
               </ul>
             </div>
             
-            <div className="relative">
+            <div className="relative text-center md:text-left">
               {/* Subtle accent for section */}
               <div className="absolute -top-2 -left-2 w-10 h-10 bg-accent/5 rounded-full blur-md"></div>
               
               <h3 className="text-white font-semibold mb-4">
                 <span className="relative inline-block">
                   Contact
-                  <span className="absolute -bottom-1 left-0 w-8 h-0.5 bg-accent/30 rounded-full"></span>
+                  <span className="absolute -bottom-1 left-0 right-0 md:right-auto md:left-0 md:w-8 w-12 h-0.5 bg-accent/30 rounded-full mx-auto md:mx-0"></span>
                 </span>
               </h3>
               <ul className="space-y-3">
@@ -139,7 +139,7 @@ const Footer = () => {
           {/* Divider with gradient */}
           <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
           
-          <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
             <p className="text-gray-400 text-sm mb-4 md:mb-0 relative group">
               <span className="absolute -left-2 top-1/2 -translate-y-1/2 w-1 h-1 bg-accent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
               &copy; {currentYear} Thinnan. All rights reserved.

@@ -23,21 +23,21 @@ const DownloadSection = () => {
       
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-          <div className="text-white relative">
+          <div className="text-white relative text-center md:text-left">
             <div className="absolute -top-10 -left-10 w-32 h-32 bg-accent/20 rounded-full opacity-40 blur-2xl"></div>
             
             <h2 className="text-3xl md:text-4xl font-bold mb-6 relative">
               Download the thinnan App
-              <div className="absolute -bottom-2 -left-1 h-1 w-16 bg-accent rounded-full"></div>
+              <div className="absolute -bottom-2 left-0 right-0 md:right-auto md:left-0 md:w-16 h-1 bg-accent rounded-full mx-auto md:mx-0"></div>
             </h2>
             
-            <p className="text-xl opacity-90 mb-8 text-gray-200">
+            <p className="text-xl opacity-90 mb-8 text-gray-200 mx-auto md:mx-0 max-w-md">
               Start your culinary journey today. Connect with food enthusiasts, discover unique cookouts, 
               and create memorable dining experiences.
             </p>
             
             <div className="space-y-6">
-              <div className="flex items-center space-x-4 group">
+              <div className="flex items-center space-x-4 group justify-center md:justify-start">
                 <div className="bg-gradient-to-br from-accent to-accent/70 rounded-full p-3 shadow-lg shadow-accent/10 transform group-hover:scale-110 transition-transform duration-300">
                   <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
@@ -46,7 +46,7 @@ const DownloadSection = () => {
                 <p className="text-lg group-hover:translate-x-2 transition-transform duration-300">Discover and join culinary events near you</p>
               </div>
               
-              <div className="flex items-center space-x-4 group">
+              <div className="flex items-center space-x-4 group justify-center md:justify-start">
                 <div className="bg-gradient-to-br from-accent to-accent/70 rounded-full p-3 shadow-lg shadow-accent/10 transform group-hover:scale-110 transition-transform duration-300">
                   <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
@@ -55,7 +55,7 @@ const DownloadSection = () => {
                 <p className="text-lg group-hover:translate-x-2 transition-transform duration-300">Host your own cookouts and share your recipes</p>
               </div>
               
-              <div className="flex items-center space-x-4 group">
+              <div className="flex items-center space-x-4 group justify-center md:justify-start">
                 <div className="bg-gradient-to-br from-accent to-accent/70 rounded-full p-3 shadow-lg shadow-accent/10 transform group-hover:scale-110 transition-transform duration-300">
                   <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
@@ -65,7 +65,7 @@ const DownloadSection = () => {
               </div>
             </div>
             
-            <div className="mt-10 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+            <div className="mt-10 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
               <a 
                 href="#" 
                 className="flex items-center justify-center bg-white text-black px-6 py-3 rounded-xl hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-white/10 hover:-translate-y-1 group relative overflow-hidden"
@@ -123,10 +123,6 @@ const DownloadSection = () => {
               <div className="absolute top-8 -right-8 w-[300px] h-[620px] bg-black/30 rounded-[40px] blur-xl -z-10 hidden lg:block"></div>
             </div>
             
-            {/* Floating particles */}
-            <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-white rounded-full opacity-50 animate-pulse"></div>
-            <div className="absolute top-3/4 left-1/2 w-2 h-2 bg-white rounded-full opacity-50 animate-pulse animation-delay-700"></div>
-            <div className="absolute top-2/3 right-1/4 w-2 h-2 bg-white rounded-full opacity-50 animate-pulse animation-delay-1500"></div>
           </div>
         </div>
       </div>

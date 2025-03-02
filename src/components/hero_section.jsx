@@ -18,7 +18,7 @@ const HeroSection = () => {
       
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-          <div className="space-y-8">
+          <div className="space-y-8 text-center md:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               <span className="text-black">thinnan</span>
               <span className="text-accent">.</span><br />
@@ -27,11 +27,11 @@ const HeroSection = () => {
               <span className="text-black">network</span>
               <span className="text-accent">.</span>
             </h1>
-            <p className="text-gray-700 text-xl md:pr-12">
+            <p className="text-gray-700 text-xl md:pr-12 mx-auto md:mx-0 max-w-md">
               Bringing people together plate by plate! Connect with food enthusiasts, discover cookouts, 
               and share culinary experiences.
             </p>
-            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+            <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
               <a href="#download" className="btn-primary text-center shadow-lg relative overflow-hidden group">
                 <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-accent to-accent bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500 opacity-0 group-hover:opacity-20"></span>
                 <span className="relative">Download App</span>
