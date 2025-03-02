@@ -41,36 +41,65 @@ const FoundersSection = () => {
   ];
 
   return (
-    <section id="founders" className="py-16 md:py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Meet Our Founders</h2>
+    <section id="founders" className="py-16 md:py-24 relative overflow-hidden">
+      {/* Background patterns */}
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-50 via-white to-gray-50"></div>
+      <div className="absolute -top-24 -right-24 w-96 h-96 bg-accent opacity-5 rounded-full blur-3xl"></div>
+      <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-primary opacity-5 rounded-full blur-3xl"></div>
+      
+      {/* Subtle grid pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="w-full h-full" style={{ 
+          backgroundImage: 'radial-gradient(circle, #000000 1px, transparent 1px)',
+          backgroundSize: '30px 30px'
+        }}></div>
+      </div>
+      
+      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 relative z-10">
+        <div className="text-center mb-16 relative">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-accent opacity-5 rounded-full blur-xl"></div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 relative">
+            Meet Our <span className="relative inline-block">
+              Founders
+              <span className="absolute -bottom-1 left-0 w-full h-1 bg-accent opacity-30 rounded-full"></span>
+            </span>
+          </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             The team behind Thinnan bringing the joy of shared meals to your community.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
           {founders.map((founder, index) => (
             <div 
               key={index} 
-              className="bg-white rounded-2xl shadow-lg overflow-hidden transition-transform duration-300 hover:transform hover:scale-105"
+              className="bg-white rounded-2xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1 relative"
             >
-              <div className="h-64 overflow-hidden">
+              {/* Subtle gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-black/[0.02] to-transparent opacity-70 pointer-events-none z-10"></div>
+              
+              {/* Accent corner */}
+              <div className="absolute top-0 right-0 border-t-[25px] border-r-[25px] border-t-accent/20 border-r-transparent"></div>
+              
+              <div className="h-64 overflow-hidden relative">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent z-10"></div>
                 <img 
                   src={founder.image} 
                   alt={founder.name} 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-all duration-700 hover:scale-110"
                 />
               </div>
-              <div className="p-6">
+              <div className="p-6 relative">
                 <h3 className="text-xl font-bold mb-1">{founder.name}</h3>
-                <p className="text-gray-500 mb-3">{founder.role}</p>
+                <p className="text-gray-500 mb-3 flex items-center">
+                  {founder.role}
+                  <span className="ml-2 w-1.5 h-1.5 bg-accent rounded-full inline-block opacity-70"></span>
+                </p>
                 <p className="text-gray-700">{founder.bio}</p>
-                <div className="mt-4 flex space-x-3">
+                <div className="mt-5 pt-4 flex space-x-3 border-t border-gray-100">
                   <a 
                     href="#" 
-                    className="text-gray-700 hover:text-black transition-colors"
+                    className="text-gray-500 hover:text-accent transition-colors"
                     aria-label={`${founder.name}'s LinkedIn profile`}
                   >
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -79,7 +108,7 @@ const FoundersSection = () => {
                   </a>
                   <a 
                     href="#" 
-                    className="text-gray-700 hover:text-black transition-colors"
+                    className="text-gray-500 hover:text-accent transition-colors"
                     aria-label={`${founder.name}'s Twitter profile`}
                   >
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
