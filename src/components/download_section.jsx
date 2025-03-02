@@ -1,5 +1,6 @@
 import GoogleIcon from '../assets/icons/google_icon';
 import AppleIcon from '../assets/icons/apple_icon';
+import downloadScreenshot from '../assets/screenshots/download_section.png';
 
 const DownloadSection = () => {
   return (
@@ -75,7 +76,7 @@ const DownloadSection = () => {
                   
                   {/* App screenshot image */}
                   <img 
-                    src="/src/assets/screenshots/download_section.png" 
+                    src={downloadScreenshot} 
                     alt="Thinnan app screenshot" 
                     className="h-full w-full object-cover"
                   />
