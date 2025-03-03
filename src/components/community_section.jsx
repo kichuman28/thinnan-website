@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 const CommunitySection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [direction, setDirection] = useState(0); // -1 for left, 1 for right
   
   const testimonials = [
     {
@@ -25,11 +26,18 @@ const CommunitySection = () => {
   ];
 
   const nextTestimonial = () => {
+    setDirection(1);
     setActiveIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
   };
 
   const prevTestimonial = () => {
+    setDirection(-1);
     setActiveIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
+  };
+
+  const goToTestimonial = (index) => {
+    setDirection(index > activeIndex ? 1 : -1);
+    setActiveIndex(index);
   };
 
   return (
@@ -63,7 +71,7 @@ const CommunitySection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="order-2 md:order-1">
-            <div className="card p-8 md:p-10 bg-white backdrop-blur-sm bg-opacity-80 relative group">
+            <div className="card p-8 md:p-10 bg-white backdrop-blur-sm bg-opacity-80 relative group overflow-hidden">
               {/* Card decorative elements */}
               <div className="absolute -top-1 -bottom-1 left-0 w-1 bg-gradient-to-b from-transparent via-accent/40 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="absolute -left-4 -top-4 w-8 h-8 border border-gray-200 rounded-full opacity-30"></div>
@@ -74,30 +82,42 @@ const CommunitySection = () => {
                   <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                 </svg>
                 
-                <div className="mb-6">
-                  <p className="text-lg text-gray-700 italic mb-4 relative">
-                    <span className="relative">
-                      "{testimonials[activeIndex].quote}"
-                      <span className="absolute -left-2 -top-2 text-4xl text-accent opacity-10">"</span>
-                    </span>
-                  </p>
-                  
-                  <div className="flex items-center">
-                    <div className="w-12 h-12 bg-gray-300 rounded-full overflow-hidden mr-4 ring-2 ring-white shadow-md">
-                      <img 
-                        src={testimonials[activeIndex].image} 
-                        alt={testimonials[activeIndex].name}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-gray-800">{testimonials[activeIndex].name}</h4>
-                      <p className="text-sm text-gray-500 flex items-center">
-                        {testimonials[activeIndex].role}
-                        <span className="w-1 h-1 rounded-full bg-accent ml-2 opacity-70"></span>
+                <div className="relative h-[200px] overflow-hidden">
+                  {testimonials.map((testimonial, index) => (
+                    <div
+                      key={index}
+                      className="absolute w-full transition-transform duration-500 ease-in-out"
+                      style={{
+                        transform: `translateX(${(index - activeIndex) * 100}%)`,
+                        opacity: index === activeIndex ? 1 : 0,
+                        transition: 'transform 500ms ease-in-out, opacity 500ms ease-in-out',
+                      }}
+                    >
+                      <p className="text-lg text-gray-700 italic mb-4 relative">
+                        <span className="relative">
+                          "{testimonial.quote}"
+                          <span className="absolute -left-2 -top-2 text-4xl text-accent opacity-10">"</span>
+                        </span>
                       </p>
+                      
+                      <div className="flex items-center">
+                        <div className="w-12 h-12 bg-gray-300 rounded-full overflow-hidden mr-4 ring-2 ring-white shadow-md">
+                          <img 
+                            src={testimonial.image} 
+                            alt={testimonial.name}
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                        <div>
+                          <h4 className="font-bold text-gray-800">{testimonial.name}</h4>
+                          <p className="text-sm text-gray-500 flex items-center">
+                            {testimonial.role}
+                            <span className="w-1 h-1 rounded-full bg-accent ml-2 opacity-70"></span>
+                          </p>
+                        </div>
+                      </div>
                     </div>
-                  </div>
+                  ))}
                 </div>
                 
                 <div className="flex justify-between items-center mt-8 border-t pt-4 border-gray-100">
@@ -115,7 +135,7 @@ const CommunitySection = () => {
                     {testimonials.map((_, index) => (
                       <button
                         key={index}
-                        onClick={() => setActiveIndex(index)}
+                        onClick={() => goToTestimonial(index)}
                         className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
                           index === activeIndex 
                             ? 'bg-accent scale-125' 
