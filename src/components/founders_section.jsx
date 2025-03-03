@@ -18,63 +18,63 @@ const FoundersSection = () => {
       role: "founder",
       areas: ["product", "finance", "business development"],
       image: kevinImg,
-      linkedin: "#"
+      linkedin: "https://www.linkedin.com/in/jacobkevin/"
     },
     {
       name: "vishnu",
       role: "co-founder",
       areas: ["sales", "operations"],
       image: vishnuImg,
-      linkedin: "#"
+      linkedin: "https://www.linkedin.com/in/vishnuaravind01/"
     },
     {
       name: "annu",
       role: "co-founder",
       areas: ["design", "marketing"],
       image: annuImg,
-      linkedin: "#"
+      linkedin: "https://www.linkedin.com/in/annu-mathew-service-designer/"
     },
     {
       name: "adriaan",
       role: "cto",
       areas: ["8 yrs IT experience", "co-founder, Unveiler"],
       image: adriaanImg,
-      linkedin: "#"
+      linkedin: "https://www.linkedin.com/in/adriaan-knapen/"
     },
     {
       name: "cal",
       role: "advisor, thinnan",
       areas: ["co-founder, Slack", "former head of eng, Flickr"],
       image: calImg,
-      linkedin: "#"
+      linkedin: "https://www.linkedin.com/in/iamcal/"
     },
     {
       name: "dana",
       role: "advisor, thinnan",
       areas: ["co-founder, Sulapac Ltd", "co-founder, Kuurai Oy"],
       image: danaImg,
-      linkedin: "#"
+      linkedin: "https://www.linkedin.com/in/loredanamoimas/"
     },
     {
       name: "manyu",
       role: "ui/ux lead design",
       areas: ["8+ years in digital product design"],
       image: manyuImg,
-      linkedin: "#"
+      linkedin: "https://www.linkedin.com/in/manyuvarma/"
     },
     {
       name: "kishore",
       role: "designer",
       areas: [],
       image: kishoreImg,
-      linkedin: "#"
+      linkedin: "https://www.linkedin.com/in/kishorenataraj/"
     },
     {
       name: "adwaith",
       role: "developer",
       areas: [],
       image: adwaithImg,
-      linkedin: "#"
+      linkedin: "https://www.linkedin.com/in/adwaith-jayasankar-156539200/"
     }
   ];
 
@@ -112,7 +112,7 @@ const FoundersSection = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="absolute top-4 right-4 bg-white rounded-full p-1.5 shadow-lg hover:bg-gray-50 transition-all duration-300 
-                           opacity-0 group-hover:opacity-100 transform translate-y-2 group-hover:translate-y-0 z-10"
+                           z-10"
                 >
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>

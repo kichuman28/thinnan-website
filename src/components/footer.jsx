@@ -37,31 +37,19 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4 justify-center md:justify-start">
               <a 
-                href="#" 
+                href="https://www.linkedin.com/company/thinnan/" 
                 className="text-gray-300 hover:text-accent transition-all duration-300 transform hover:scale-110" 
-                aria-label="Facebook"
+                aria-label="LinkedIn"
               >
                 <div className="relative group">
                   <div className="absolute inset-0 bg-accent opacity-0 group-hover:opacity-20 rounded-full blur-sm transition-opacity duration-300"></div>
                   <svg className="w-6 h-6 relative" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M22 12.0611C22 6.50451 17.5229 2 12 2C6.47715 2 2 6.50451 2 12.0611C2 17.0828 5.65684 21.2452 10.4375 22V14.9694H7.89844V12.0611H10.4375V9.84452C10.4375 7.32296 11.9305 5.93012 14.2146 5.93012C15.3084 5.93012 16.4531 6.12663 16.4531 6.12663V8.60261H15.1922C13.95 8.60261 13.5625 9.37822 13.5625 10.1748V12.0611H16.3359L15.8926 14.9694H13.5625V22C18.3432 21.2452 22 17.0828 22 12.0611Z" />
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                   </svg>
                 </div>
               </a>
               <a 
-                href="#" 
-                className="text-gray-300 hover:text-accent transition-all duration-300 transform hover:scale-110" 
-                aria-label="Twitter"
-              >
-                <div className="relative group">
-                  <div className="absolute inset-0 bg-accent opacity-0 group-hover:opacity-20 rounded-full blur-sm transition-opacity duration-300"></div>
-                  <svg className="w-6 h-6 relative" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M23.9938 4.53339C23.0942 4.97873 22.1445 5.2751 21.164 5.40905C22.2009 4.77794 22.9676 3.79748 23.3305 2.62839C22.3744 3.21629 21.3144 3.64406 20.2106 3.87451C19.4921 3.09945 18.5458 2.58766 17.5082 2.41856C16.4706 2.24947 15.4076 2.43208 14.4771 2.93833C13.5466 3.44457 12.8031 4.24684 12.35 5.2208C11.8969 6.19477 11.7612 7.29095 11.9634 8.3455C10.1554 8.24555 8.38809 7.76087 6.77807 6.92058C5.16805 6.0803 3.75347 4.89846 2.62192 3.44924C2.22148 4.15479 1.98558 4.97539 1.98558 5.84747C1.9851 6.63451 2.18178 7.40864 2.55798 8.10241C2.93418 8.79619 3.47753 9.38583 4.13916 9.8166C3.35284 9.79205 2.58356 9.56709 1.89642 9.15887V9.22342C1.8964 10.3539 2.28303 11.4489 2.98583 12.3292C3.68863 13.2095 4.66563 13.8223 5.76649 14.0607C5.03398 14.2712 4.26522 14.3037 3.51775 14.1551C3.78939 15.1354 4.35954 16.0021 5.14922 16.6367C5.9389 17.2714 6.90646 17.6452 7.90949 17.7071C6.31122 18.9869 4.35782 19.6831 2.34607 19.6799C1.97315 19.6799 1.60039 19.6542 1.2301 19.603C3.27163 20.9698 5.63691 21.6912 8.05183 21.6882C15.9495 21.6882 20.2786 15.2887 20.2786 9.75778C20.2786 9.53347 20.273 9.30746 20.2626 9.08315C21.215 8.37199 22.0303 7.49 22.6759 6.47974C21.803 6.87824 20.8771 7.14207 19.9291 7.26246C20.9192 6.653 21.6612 5.68777 22.0186 4.55348L23.9938 4.53339Z" />
-                  </svg>
-                </div>
-              </a>
-              <a 
-                href="#" 
+                href="https://www.instagram.com/thinnan.app/" 
                 className="text-gray-300 hover:text-accent transition-all duration-300 transform hover:scale-110" 
                 aria-label="Instagram"
               >
@@ -106,9 +94,9 @@ const Footer = () => {
                 </span>
               </h3>
               <ul className="space-y-3">
-                <li><a href="#" className="text-gray-300 hover:text-accent hover:translate-x-1 inline-block transition-all duration-300">iOS App</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-accent hover:translate-x-1 inline-block transition-all duration-300">Android App</a></li>
-                <li><a href="#" className="text-gray-300 hover:text-accent hover:translate-x-1 inline-block transition-all duration-300">Web App</a></li>
+                <li><a href="https://apps.apple.com/fi/app/thinnan/id6502411893" className="text-gray-300 hover:text-accent hover:translate-x-1 inline-block transition-all duration-300">iOS App</a></li>
+                <li><a href="https://play.google.com/store/apps/details?id=com.jathikka.thinaan&hl=en" className="text-gray-300 hover:text-accent hover:translate-x-1 inline-block transition-all duration-300">Android App</a></li>
+                <li><a href="https://www.thinnan.app/" className="text-gray-300 hover:text-accent hover:translate-x-1 inline-block transition-all duration-300">Web App</a></li>
               </ul>
             </div>
             
@@ -145,17 +133,9 @@ const Footer = () => {
               &copy; {currentYear} thinnan. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-400">
-              <a href="#" className="hover:text-accent transition-all duration-300 relative group">
+              <a href="https://www.jathikka.com/#/thinnan/privacy-policy" className="hover:text-accent transition-all duration-300 relative group">
                 <span className="absolute -bottom-1 left-0 w-0 h-px bg-accent group-hover:w-full transition-all duration-300"></span>
                 Privacy Policy
-              </a>
-              <a href="#" className="hover:text-accent transition-all duration-300 relative group">
-                <span className="absolute -bottom-1 left-0 w-0 h-px bg-accent group-hover:w-full transition-all duration-300"></span>
-                Terms of Service
-              </a>
-              <a href="#" className="hover:text-accent transition-all duration-300 relative group">
-                <span className="absolute -bottom-1 left-0 w-0 h-px bg-accent group-hover:w-full transition-all duration-300"></span>
-                Cookie Policy
               </a>
             </div>
           </div>

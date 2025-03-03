@@ -39,7 +39,7 @@ const Navbar = () => {
             <a href="#how-it-works" className="text-gray-700 hover:text-black transition-colors duration-300 font-medium">How It Works</a>
             <a href="#community" className="text-gray-700 hover:text-black transition-colors duration-300 font-medium">Community</a>
             <a href="#founders" className="text-gray-700 hover:text-black transition-colors duration-300 font-medium">Founders</a>
-            <a href="#download" className="bg-black text-white px-6 py-2 rounded-full font-medium hover:bg-gray-800 transition-all duration-300">Download App</a>
+            <a href="https://thinnan.page.link/download" className="bg-black text-white px-6 py-2 rounded-full font-medium hover:bg-gray-800 transition-all duration-300">Download App</a>
           </div>
           
           {/* Mobile Menu Button */}
@@ -70,7 +70,7 @@ const Navbar = () => {
               <a href="#how-it-works" className="text-gray-700 hover:text-black transition-colors duration-300 font-medium" onClick={toggleMenu}>How It Works</a>
               <a href="#community" className="text-gray-700 hover:text-black transition-colors duration-300 font-medium" onClick={toggleMenu}>Community</a>
               <a href="#founders" className="text-gray-700 hover:text-black transition-colors duration-300 font-medium" onClick={toggleMenu}>Founders</a>
-              <a href="#download" className="bg-black text-white px-6 py-2 rounded-full font-medium hover:bg-gray-800 transition-all duration-300 text-center" onClick={toggleMenu}>Download App</a>
+              <a href="https://thinnan.page.link/download" className="bg-black text-white px-6 py-2 rounded-full font-medium hover:bg-gray-800 transition-all duration-300 text-center" onClick={toggleMenu}>Download App</a>
             </div>
           </div>
         )}

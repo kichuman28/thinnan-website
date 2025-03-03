@@ -33,7 +33,7 @@ const HeroSection = () => {
               <span className="text-accent font-medium">plate by plate!</span>
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
-              <a href="#download" className="btn-primary text-center shadow-lg relative overflow-hidden group">
+              <a href="https://thinnan.page.link/download" className="btn-primary text-center shadow-lg relative overflow-hidden group">
                 <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-accent to-accent bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500 opacity-0 group-hover:opacity-20"></span>
                 <span className="relative">Download App</span>
               </a>
