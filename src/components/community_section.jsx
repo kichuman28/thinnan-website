@@ -218,7 +218,7 @@ const CommunitySection = () => {
                     <span className="w-1.5 h-1.5 bg-accent rounded-full ml-2"></span>
                   </h3>
                   <p className="mb-5 opacity-90">Experience the joy of cooking, sharing, and connecting with food enthusiasts in your area.</p>
-                  <a href="#download" className="btn-secondary bg-white text-black hover:bg-gray-100 w-full block text-center group relative overflow-hidden">
+                  <a href="https://thinnan.page.link/download" className="btn-secondary bg-white text-black hover:bg-gray-100 w-full block text-center group relative overflow-hidden">
                     <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-accent to-accent bg-size-200 bg-pos-0 group-hover:bg-pos-100 transition-all duration-500 opacity-0 group-hover:opacity-20"></span>
                     <span className="relative">Download the App</span>
                   </a>
