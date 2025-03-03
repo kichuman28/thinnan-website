@@ -1,5 +1,3 @@
-import idliImage from '../assets/images/Idli.png';
-import berryPorridgeImage from '../assets/images/berry_porridge.png';
 import cookingEventImage from '../assets/images/cooking_event.jpg';
 import foodDiscoveryImage from '../assets/images/food-discovery.jpg';
 import story1Image from '../assets/images/story_1.jpg';
