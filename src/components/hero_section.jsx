@@ -9,12 +9,10 @@ const HeroSection = () => {
       <div className="absolute top-0 right-0 w-1/3 h-96 bg-gradient-to-b from-accent/5 to-transparent rounded-bl-full z-0"></div>
       <div className="absolute bottom-0 left-0 w-1/2 h-64 bg-gradient-to-t from-gray-200/50 to-transparent z-0"></div>
       
-      {/* Decorative elements - removing all potentially problematic ones */}
+      {/* Decorative elements */}
       <div className="absolute top-20 left-10 w-64 h-64 rounded-full border border-gray-200 opacity-60"></div>
       <div className="absolute top-40 left-20 w-40 h-40 rounded-full border border-gray-300 opacity-40"></div>
       <div className="absolute bottom-20 right-10 w-80 h-80 rounded-full border border-gray-200 opacity-60"></div>
-      
-      {/* Removed all small decorative elements that could interfere with text or buttons */}
       
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -27,9 +25,12 @@ const HeroSection = () => {
               <span className="text-black">network</span>
               <span className="text-accent">.</span>
             </h1>
-            <p className="text-gray-700 text-xl md:pr-12 mx-auto md:mx-0 max-w-md">
-              Bringing people together plate by plate! Connect with food enthusiasts, discover cookouts, 
-              and share culinary experiences.
+            <p className="text-gray-700 text-2xl md:text-3xl font-light tracking-wide md:pr-12 mx-auto md:mx-0 max-w-md relative">
+              <span className="relative inline-block">
+                bringing people together
+              </span>
+              <br />
+              <span className="text-accent font-medium">plate by plate!</span>
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
               <a href="#download" className="btn-primary text-center shadow-lg relative overflow-hidden group">
@@ -54,9 +55,11 @@ const HeroSection = () => {
                   className="max-w-full h-auto shadow-lg rounded-3xl relative z-10"
                   style={{ maxHeight: '600px' }} 
                 />
+                {/* Reflection effect */}
+                <div className="absolute inset-0 bg-gradient-to-b from-white/20 to-transparent rounded-3xl"></div>
               </div>
               
-              {/* Decorative elements - keeping these away from the button area */}
+              {/* Decorative elements */}
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-accent rounded-full opacity-10 blur-lg"></div>
               <div className="absolute -top-6 -left-6 w-16 h-16 bg-primary rounded-full opacity-5 blur-md"></div>
             </div>
