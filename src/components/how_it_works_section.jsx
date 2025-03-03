@@ -42,8 +42,7 @@ const HowItWorksSection = () => {
           <div className="space-y-8">
             {/* Step 1 - Create Profile */}
             <div className="relative group">
-              <div className="absolute -left-3 top-1/2 w-6 h-6 bg-accent rounded-full -translate-y-1/2 shadow-lg z-10"></div>
-              <div className="bg-white backdrop-blur-sm bg-opacity-80 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 ml-8">
+              <div className="bg-white backdrop-blur-sm bg-opacity-80 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100">
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-accent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="p-6">
                   <div className="flex items-center mb-4">
@@ -67,8 +66,7 @@ const HowItWorksSection = () => {
 
             {/* Step 2 - Add Friends */}
             <div className="relative group">
-              <div className="absolute -left-3 top-1/2 w-6 h-6 bg-accent rounded-full -translate-y-1/2 shadow-lg z-10"></div>
-              <div className="bg-white backdrop-blur-sm bg-opacity-80 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 ml-8">
+              <div className="bg-white backdrop-blur-sm bg-opacity-80 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100">
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-accent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="p-6">
                   <div className="flex items-center mb-4">
@@ -98,8 +96,7 @@ const HowItWorksSection = () => {
 
             {/* Step 3 - Plan Cookout */}
             <div className="relative group">
-              <div className="absolute -left-3 top-1/2 w-6 h-6 bg-accent rounded-full -translate-y-1/2 shadow-lg z-10"></div>
-              <div className="bg-white backdrop-blur-sm bg-opacity-80 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 ml-8">
+              <div className="bg-white backdrop-blur-sm bg-opacity-80 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100">
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-accent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="p-6">
                   <div className="flex items-center mb-4">
@@ -135,8 +132,7 @@ const HowItWorksSection = () => {
 
             {/* Step 4 - Share Experience */}
             <div className="relative group">
-              <div className="absolute -left-3 top-1/2 w-6 h-6 bg-accent rounded-full -translate-y-1/2 shadow-lg z-10"></div>
-              <div className="bg-white backdrop-blur-sm bg-opacity-80 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 ml-8">
+              <div className="bg-white backdrop-blur-sm bg-opacity-80 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100">
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-accent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="p-6">
                   <div className="flex items-center mb-4">
@@ -160,8 +156,7 @@ const HowItWorksSection = () => {
 
             {/* Step 5 - Grow Network */}
             <div className="relative group">
-              <div className="absolute -left-3 top-1/2 w-6 h-6 bg-accent rounded-full -translate-y-1/2 shadow-lg z-10"></div>
-              <div className="bg-white backdrop-blur-sm bg-opacity-80 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 ml-8">
+              <div className="bg-white backdrop-blur-sm bg-opacity-80 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100">
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-accent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="p-6">
                   <div className="flex items-center mb-4">
