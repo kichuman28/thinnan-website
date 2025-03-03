@@ -175,17 +175,17 @@ const CommunitySection = () => {
                   <div className="space-y-3 sm:space-y-4">
                     <div className="flex justify-between items-center pb-2 border-b border-white/10">
                       <span className="text-sm sm:text-base text-gray-300">Active users</span>
-                      <span className="font-semibold text-sm sm:text-base text-white">5,400+</span>
+                      <span className="font-semibold text-sm sm:text-base text-white">1,700+</span>
                     </div>
                     <div className="flex justify-between items-center pb-2 border-b border-white/10">
                       <span className="text-sm sm:text-base text-gray-300">Countries represented</span>
-                      <span className="font-semibold text-sm sm:text-base text-white">32</span>
+                      <span className="font-semibold text-sm sm:text-base text-white">5</span>
                     </div>
                     <div className="flex justify-between items-center pb-2 border-b border-white/10">
                       <span className="text-sm sm:text-base text-gray-300">Meals shared</span>
-                      <span className="font-semibold text-sm sm:text-base text-white">12,800+</span>
+                      <span className="font-semibold text-sm sm:text-base text-white">500+</span>
                     </div>
-                    <div className="flex justify-between items-center">
+                    {/* <div className="flex justify-between items-center">
                       <span className="text-sm sm:text-base text-gray-300">Average event rating</span>
                       <div className="flex items-center">
                         <span className="font-semibold text-sm sm:text-base text-white mr-1">4.8</span>
@@ -197,7 +197,7 @@ const CommunitySection = () => {
                           ))}
                         </div>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
