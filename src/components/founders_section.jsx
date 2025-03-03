@@ -65,14 +65,14 @@ const FoundersSection = () => {
     {
       name: "kishore",
       role: "designer",
-      areas: [],
+      areas: ["product design"],
       image: kishoreImg,
       linkedin: "https://www.linkedin.com/in/kishorenataraj/"
     },
     {
       name: "adwaith",
       role: "developer",
-      areas: [],
+      areas: ["app development"],
       image: adwaithImg,
       linkedin: "https://www.linkedin.com/in/adwaith-jayasankar-156539200/"
     }
