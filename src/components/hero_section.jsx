@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import heroImage from '../assets/screenshots/hero_section.png';
+import heroImage from '../assets/images/hero_section.png';
 
 const HeroSection = () => {
   return (

@@ -1,7 +1,24 @@
-import idliImage from '../assets/screenshots/Idli.png';
-import berryPorridgeImage from '../assets/screenshots/berry_porridge.png';
+import idliImage from '../assets/images/Idli.png';
+import berryPorridgeImage from '../assets/images/berry_porridge.png';
+import cookingEventImage from '../assets/images/cooking_event.jpg';
+import foodDiscoveryImage from '../assets/images/food-discovery.jpg';
+import story1Image from '../assets/images/story_1.jpg';
+import story2Image from '../assets/images/story_2.jpg';
+import story3Image from '../assets/images/story_3.jpg';
+import indiaFlag from '../assets/images/india_flag.png';
+import italyFlag from '../assets/images/italy_flag.png';
+import japanFlag from '../assets/images/japan_flag.png';
+import mexicoFlag from '../assets/images/mexico_flag.png';
 
 const FeaturesSection = () => {
+  const friendImages = [
+    "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+  ];
+
   return (
     <section id="features" className="py-16 md:py-24 relative overflow-hidden">
       {/* Background elements */}
@@ -21,50 +38,86 @@ const FeaturesSection = () => {
         <div className="text-center mb-16 relative">
           <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-32 h-32 bg-accent/10 rounded-full blur-xl"></div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 relative inline-block">
-            Creating Connections Through Food
+            Features
             <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-accent to-transparent opacity-40"></div>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mt-4">
-            thinnan helps you discover, connect, and share memorable meals with friends and food enthusiasts.
-          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
-          {/* Feature 1 */}
-          <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 relative group">
-            {/* Accent border */}
-            <div className="absolute inset-0 border-2 border-accent/0 group-hover:border-accent/20 rounded-2xl transition-colors duration-500"></div>
-            {/* Accent corner */}
-            <div className="absolute -top-5 -right-5 w-10 h-10 bg-gradient-to-br from-accent/20 to-accent/5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md"></div>
-            
-            <div className="p-6 md:p-8">
-              <div className="w-14 h-14 bg-gradient-to-br from-accent to-accent/70 rounded-full flex items-center justify-center mb-5 shadow-md transform group-hover:rotate-3 transition-transform duration-300">
-                <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"></path>
-                </svg>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+          {/* Left Column - Main Features */}
+          <div className="space-y-8">
+            {/* Host or Join Cookouts */}
+            <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
+              <div className="grid md:grid-cols-5 gap-6">
+                <div className="md:col-span-2 p-6 flex items-center justify-center">
+                  <div className="relative w-full aspect-square rounded-xl overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-accent/5"></div>
+                    <img 
+                      src={cookingEventImage} 
+                      alt="People cooking together"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+                <div className="md:col-span-3 p-6 flex flex-col justify-center">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-accent to-accent/70 rounded-full flex items-center justify-center shadow-md">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                      </svg>
+                    </div>
+                    <h3 className="text-xl font-bold ml-4 group-hover:text-accent transition-colors duration-300">Host or Join Cookouts</h3>
+                  </div>
+                  <p className="text-gray-600">Plan a meal, invite friends, and cook together.</p>
+                  <div className="mt-6 flex items-center space-x-4">
+                    <div className="flex -space-x-3">
+                      {friendImages.slice(0, 3).map((image, index) => (
+                        <div key={index} className="w-8 h-8 rounded-full border-2 border-white relative">
+                          <img 
+                            src={image} 
+                            alt={`Friend ${index + 1}`}
+                            className="w-full h-full rounded-full object-cover"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                    <span className="text-sm text-gray-500">+12 joined today</span>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-xl font-bold mb-2 group-hover:text-accent transition-colors duration-300">Host Cookouts</h3>
-              <p className="text-gray-600 mb-4">
-                Share your culinary skills by hosting cookouts. Invite friends, set dates, and create memorable food experiences together.
-              </p>
+            </div>
 
-              <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden relative mt-6 group-hover:shadow-md transition-shadow duration-300">
-                <div className="bg-gradient-to-br from-gray-50 to-gray-100 w-full h-[180px] rounded-xl flex items-center justify-center p-4">
-                  <div className="w-full max-w-[220px] bg-white rounded-lg shadow-md p-3 transform group-hover:scale-105 transition-transform duration-300">
-                    <div className="flex items-center space-x-2 mb-2">
-                      <div className="text-sm font-medium">Podi Idli & Mint Chutney</div>
+            {/* Discover Cookouts */}
+            <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 group">
+              <div className="grid md:grid-cols-5 gap-6">
+                <div className="md:col-span-2 p-6 flex items-center justify-center">
+                  <div className="relative w-full aspect-square rounded-xl overflow-hidden">
+                    <div className="absolute inset-0 bg-gradient-to-br from-accent/20 to-accent/5"></div>
+                    <img 
+                      src={foodDiscoveryImage} 
+                      alt="Various dishes"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+                <div className="md:col-span-3 p-6 flex flex-col justify-center">
+                  <div className="flex items-center mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-accent to-accent/70 rounded-full flex items-center justify-center shadow-md">
+                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                      </svg>
                     </div>
-                    <div className="h-[100px] rounded-md mb-2 relative overflow-hidden">
-                      <img 
-                        src={idliImage} 
-                        alt="Podi Idli & Mint Chutney" 
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <h3 className="text-xl font-bold ml-4 group-hover:text-accent transition-colors duration-300">Discover Cookouts</h3>
+                  </div>
+                  <p className="text-gray-600">Find gatherings hosted by friends or explore new flavors.</p>
+                  <div className="mt-6 grid grid-cols-2 gap-4">
+                    <div className="bg-gray-50 rounded-lg p-3 text-center">
+                      <div className="text-accent font-bold">150+</div>
+                      <div className="text-sm text-gray-500">Active Events</div>
                     </div>
-                    <div className="flex justify-between items-center">
-                      <div className="text-sm text-accent font-medium">€ 5.00</div>
-                      <div className="text-xs text-gray-500">Wed, 25 Dec</div>
+                    <div className="bg-gray-50 rounded-lg p-3 text-center">
+                      <div className="text-accent font-bold">20+</div>
+                      <div className="text-sm text-gray-500">Cuisines</div>
                     </div>
                   </div>
                 </div>
@@ -72,86 +125,103 @@ const FeaturesSection = () => {
             </div>
           </div>
 
-          {/* Feature 2 */}
-          <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 relative group">
-            {/* Accent border */}
-            <div className="absolute inset-0 border-2 border-accent/0 group-hover:border-accent/20 rounded-2xl transition-colors duration-500"></div>
-            {/* Accent corner */}
-            <div className="absolute -top-5 -right-5 w-10 h-10 bg-gradient-to-br from-accent/20 to-accent/5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md"></div>
-            
-            <div className="p-6 md:p-8">
-              <div className="w-14 h-14 bg-gradient-to-br from-accent to-accent/70 rounded-full flex items-center justify-center mb-5 shadow-md transform group-hover:rotate-3 transition-transform duration-300">
-                <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path fillRule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clipRule="evenodd"></path>
+          {/* Right Column - Additional Features Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {/* Shared Stories */}
+            <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 group">
+              <div className="w-12 h-12 bg-gradient-to-br from-accent to-accent/70 rounded-full flex items-center justify-center mb-4 shadow-md">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2 group-hover:text-accent transition-colors duration-300">Discover Experiences</h3>
-              <p className="text-gray-600 mb-4">
-                Find unique culinary experiences in your area. Filter by cuisine, date, or location to discover your next favorite meal.
-              </p>
+              <h3 className="text-lg font-bold mb-2 group-hover:text-accent transition-colors duration-300">Shared Stories</h3>
+              <p className="text-gray-600 text-sm">Create collaborative "hamburger posts" with photos and memories.</p>
+              <div className="mt-4 grid grid-cols-3 gap-2">
+                <img 
+                  src={story1Image} 
+                  alt="Food story 1"
+                  className="aspect-square rounded-lg object-cover"
+                />
+                <img 
+                  src={story2Image} 
+                  alt="Food story 2"
+                  className="aspect-square rounded-lg object-cover"
+                />
+                <img 
+                  src={story3Image} 
+                  alt="Food story 3"
+                  className="aspect-square rounded-lg object-cover"
+                />
+              </div>
+            </div>
 
-              <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden relative mt-6 group-hover:shadow-md transition-shadow duration-300">
-                <div className="bg-gradient-to-br from-gray-50 to-gray-100 w-full h-[180px] rounded-xl flex items-center justify-center p-4">
-                  <div className="w-full max-w-[220px] bg-white rounded-lg shadow-md p-3 transform group-hover:scale-105 transition-transform duration-300">
-                    <div className="flex justify-between items-center mb-2">
-                      <div className="text-sm font-medium">Berry porridge</div>
-                    </div>
-                    <div className="h-[100px] rounded-md mb-2 relative overflow-hidden">
+            {/* Build Your Network */}
+            <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 group">
+              <div className="w-12 h-12 bg-gradient-to-br from-accent to-accent/70 rounded-full flex items-center justify-center mb-4 shadow-md">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold mb-2 group-hover:text-accent transition-colors duration-300">Build Your Network</h3>
+              <p className="text-gray-600 text-sm">Add friends, create groups, and connect over food.</p>
+              <div className="mt-4 flex items-center space-x-2">
+                <div className="flex -space-x-3">
+                  {friendImages.slice(1, 5).map((image, index) => (
+                    <div key={index} className="w-8 h-8 rounded-full border-2 border-white relative">
                       <img 
-                        src={berryPorridgeImage} 
-                        alt="Berry porridge" 
-                        className="w-full h-full object-cover"
+                        src={image} 
+                        alt={`Network friend ${index + 1}`}
+                        className="w-full h-full rounded-full object-cover"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
-                    <div className="flex justify-between items-center">
-                      <div className="text-sm text-accent font-medium">€ 8.00</div>
-                      <div className="text-xs text-gray-500">Sat, 9 Mar</div>
-                    </div>
-                  </div>
+                  ))}
+                </div>
+                <span className="text-sm text-gray-500">+28 friends</span>
+              </div>
+            </div>
+
+            {/* Earn Badges */}
+            <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 group">
+              <div className="w-12 h-12 bg-gradient-to-br from-accent to-accent/70 rounded-full flex items-center justify-center mb-4 shadow-md">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold mb-2 group-hover:text-accent transition-colors duration-300">Earn Badges</h3>
+              <p className="text-gray-600 text-sm">Track your culinary journey with country flag badges.</p>
+              <div className="mt-4 grid grid-cols-4 gap-2">
+                <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+                  <img src={indiaFlag} alt="India Flag" className="w-full h-full object-cover" />
+                </div>
+                <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+                  <img src={italyFlag} alt="Italy Flag" className="w-full h-full object-cover" />
+                </div>
+                <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+                  <img src={japanFlag} alt="Japan Flag" className="w-full h-full object-cover" />
+                </div>
+                <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+                  <img src={mexicoFlag} alt="Mexico Flag" className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>
-          </div>
 
-          {/* Feature 3 */}
-          <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 relative group">
-            {/* Accent border */}
-            <div className="absolute inset-0 border-2 border-accent/0 group-hover:border-accent/20 rounded-2xl transition-colors duration-500"></div>
-            {/* Accent corner */}
-            <div className="absolute -top-5 -right-5 w-10 h-10 bg-gradient-to-br from-accent/20 to-accent/5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-md"></div>
-            
-            <div className="p-6 md:p-8">
-              <div className="w-14 h-14 bg-gradient-to-br from-accent to-accent/70 rounded-full flex items-center justify-center mb-5 shadow-md transform group-hover:rotate-3 transition-transform duration-300">
-                <svg className="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path fillRule="evenodd" d="M18 5v8a2 2 0 01-2 2h-5l-5 4v-4H4a2 2 0 01-2-2V5a2 2 0 012-2h12a2 2 0 012 2zM7 8H5v2h2V8zm2 0h2v2H9V8zm6 0h-2v2h2V8z" clipRule="evenodd"></path>
+            {/* Create & Inspire */}
+            <div className="bg-white/95 backdrop-blur-sm rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 group">
+              <div className="w-12 h-12 bg-gradient-to-br from-accent to-accent/70 rounded-full flex items-center justify-center mb-4 shadow-md">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold mb-2 group-hover:text-accent transition-colors duration-300">Build Community</h3>
-              <p className="text-gray-600 mb-4">
-                Create and join food-focused groups, make new friends, and strengthen bonds through shared culinary adventures.
-              </p>
-
-              <div className="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden relative mt-6 group-hover:shadow-md transition-shadow duration-300">
-                <div className="bg-gradient-to-br from-gray-50 to-gray-100 w-full h-[180px] rounded-xl flex items-center justify-center p-4">
-                  <div className="w-full max-w-[220px] flex flex-col space-y-3 transform group-hover:scale-105 transition-transform duration-300">
-                    <div className="flex items-center space-x-3 p-2 bg-white/80 rounded-lg hover:bg-white transition-colors duration-200">
-                      <div className="w-8 h-8 bg-yellow-200 rounded-full shadow-sm"></div>
-                      <div className="text-sm font-medium">Friday tea</div>
-                    </div>
-                    <div className="flex items-center space-x-3 p-2 bg-white/80 rounded-lg hover:bg-white transition-colors duration-200">
-                      <div className="w-8 h-8 bg-blue-200 rounded-full shadow-sm"></div>
-                      <div className="text-sm font-medium">Weekend assembly</div>
-                    </div>
-                    <div className="flex items-center space-x-3 p-2 bg-white/80 rounded-lg hover:bg-white transition-colors duration-200">
-                      <div className="w-8 h-8 bg-green-200 rounded-full shadow-sm"></div>
-                      <div className="text-sm font-medium">Coffee and book nerds</div>
-                    </div>
-                    <div className="flex items-center space-x-3 p-2 bg-white/80 rounded-lg hover:bg-white transition-colors duration-200">
-                      <div className="w-8 h-8 bg-purple-200 rounded-full shadow-sm"></div>
-                      <div className="text-sm font-medium">Sunday streamers</div>
-                    </div>
-                  </div>
+              <h3 className="text-lg font-bold mb-2 group-hover:text-accent transition-colors duration-300">Create & Inspire</h3>
+              <p className="text-gray-600 text-sm">Share dishes and engage with others' experiences.</p>
+              <div className="mt-4 flex items-center justify-between text-sm">
+                <div className="flex items-center space-x-2">
+                  <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center">👨‍🍳</div>
+                  <span className="text-gray-600">2.5k recipes</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center">❤️</div>
+                  <span className="text-gray-600">15k likes</span>
                 </div>
               </div>
             </div>
